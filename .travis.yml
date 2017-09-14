@@ -1,9 +1,10 @@
 language: go
 go:
-    - '1.3'
+    - '1.9'
 git:
     depth: 10000
 install: make get
 script: 
+  - make test
   - go get github.com/mitchellh/gox
   - make build
