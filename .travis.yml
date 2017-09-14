@@ -4,4 +4,6 @@ go:
 git:
     depth: 10000
 install: make get
-script: make build
+script: 
+  - go get github.com/mitchellh/gox
+  - make build
